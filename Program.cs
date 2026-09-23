@@ -1,4 +1,4 @@
-﻿//Funcion de Imprimir notas
+﻿//función de Imprimir notas
 static void ImprimirNotas(int[] notas)
 {
     for(int i=0; i<notas.Length; i++)
@@ -7,8 +7,7 @@ static void ImprimirNotas(int[] notas)
     }
 }
 
-
-//Función Calcular promedio
+//Función Calcular promedio 
 static double CalcularPromedio(int[] notas)
 {
     int suma=0;
@@ -17,7 +16,7 @@ static double CalcularPromedio(int[] notas)
         suma+=notas[i];
     }
     return (double)suma / notas.Length;
-}
+}   
 
 //Calcular nota mayor
 static int CalcularNotaMayor(int[] notas)
@@ -31,7 +30,7 @@ static int CalcularNotaMayor(int[] notas)
         }
     }
     return mayor;
-}
+}   
 
 //Calcular nota menor
 static int CalcularNotaMenor(int[] notas)
@@ -45,19 +44,19 @@ static int CalcularNotaMenor(int[] notas)
         }
     }
     return menor;
-} 
+}   
+
 
 int[] notas={15,18,12,17,20};
 
 //Imprimir las notas
 ImprimirNotas(notas);
 
-//Calcular promedio de las notas 
-
+//Calcular el promedio de las notas
 double promedio = CalcularPromedio(notas);
 Console.WriteLine($"El promedio es: {promedio}");
 
-// Imprimir las notas mayor y menor
+// Imprimir las nota mayor y menor
 int mayor = CalcularNotaMayor(notas);
 int menor = CalcularNotaMenor(notas);
 Console.WriteLine($"La nota mayor es: {mayor}");
